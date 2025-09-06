@@ -4,8 +4,8 @@
 # 暂时回滚
 sed -i '/^#src-git luci https:\/\/github.com\/coolsnowwolf\/luci$/s/^#//' feeds.conf.default && sed -i '/^src-git luci https:\/\/github.com\/coolsnowwolf\/luci\.git;openwrt-23\.05$/s/^/#/' feeds.conf.default
 
-# 修改默认IP为192.168.0.233
-sed -i 's/192.168.1.1/192.168.0.233/g' package/base-files/files/bin/config_generate 
+# 修改默认IP为192.168.0.3
+sed -i 's/192.168.1.1/192.168.0.3/g' package/base-files/files/bin/config_generate 
 
 # Hello World
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
